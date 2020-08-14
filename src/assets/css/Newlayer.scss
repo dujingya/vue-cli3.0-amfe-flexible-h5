@@ -1,0 +1,58 @@
+/**
+ * 全局样式
+ */
+
+
+ /* loading css覆盖start */
+ .layui-m-layer2 .layui-m-layercont i {
+     height: 8px;
+     width: 8px;
+     background-color: #2ecd93;
+     animation: layui-m-anim-loading 1s infinite ease-in-out;
+ }
+
+ .layui-m-layershade {
+     background-color: rgba(0, 0, 0, 0.1);
+ }
+
+ .layui-m-layer2 .layui-m-layercont i:first-child {
+     animation-delay: -0.2s;
+ }
+
+ .layui-m-layer2 .layui-m-layercont i.layui-m-layerload {
+     animation-delay: -0.1s;
+ } /* loading css覆盖end */
+body .layui-m-layer .layui-m-layer-msg {
+	width: 80%;
+    white-space: pre-line;
+}
+.layui-m-layerchild{
+	word-wrap:break-word;
+}
+.layui-m-layercont{
+	padding: 0;
+}
+#back-to-top{
+    bottom: 18px
+}
+// iphone x 底部遮盖
+.iphonex_bar {
+display: none;
+}
+@media only screen and (width: 375px) and (height: 690px){
+body {
+padding-bottom: -constant(safe-area-inset-bottom);
+}
+}
+
+@media only screen and (-webkit-device-pixel-ratio: 3) {
+.iphonex_bar {
+display: block;
+height: 45px;
+width: 100%;
+z-index: 1000;
+background: none;
+border: none;
+// margin-bottom:15px;
+}
+}

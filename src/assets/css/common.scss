@@ -1,0 +1,75 @@
+.mint-toast{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.7);
+    min-width: 156px;
+    padding: 26px 10px 20px 10px !important;
+    border-radius: 2px;
+    font-size: 16px;
+  .icon-success{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 0 16px 0;
+  }
+  .mint-toast-text{
+    padding: 0 !important;
+    color: #fff;
+  }
+}
+
+.newPageLoad {
+    height: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    position: relative;
+    .imgBox {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: calc(50% - 29px)
+    }
+    .gif {
+        width: 58px;
+        height: 58px;
+        margin-bottom: 5px;
+    }
+    p {
+        font-size: 12px;
+        color: #292929;
+    }
+}
+
+/*食材二级页面颜色配置*/
+.theme1{
+    /*foodList*/
+    /*.van-tab--active{
+        color: #1ABCD7!important;
+    }
+    .van-tabs__nav{
+        border-color: #1ABCD7!important;
+    }
+    .van-tabs__line{
+        background-color: #1ABCD7!important;
+    }
+    .foodBiaoqain .good{
+        background-color: #EFFBFD!important;
+        color: #1ABCD7!important;
+    }*/
+    /*foodDetail --moreFoodOrCook --cookbookDetail*/ 
+    /*.lateral-sliding-item-s, .goodSpan{
+        background-color: #EFFBFD!important;
+        color: #1ABCD7!important;
+    }
+    .iconfont{
+        color: #1ABCD7!important;
+    }*/
+}
