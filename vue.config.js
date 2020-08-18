@@ -1,9 +1,5 @@
 /*
  * @Description: vue config js
- * @Autor: zhan
- * @Date: 2019-08-02 15:51:47
- * @LastEditors: zhan
- * @LastEditTime: 2020-03-13 18:03:41
  */
 'use strict'
 const path = require('path')
