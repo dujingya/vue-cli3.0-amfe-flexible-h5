@@ -31,10 +31,12 @@ module.exports = {
       postcss: {
         plugins: [
           require('postcss-pxtorem')({ // 把px单位换算成rem单位
-            rootValue: 37.5, // vant官方使用的是37.5
-            rootValuePC: 192,
+            rootValue: 37.5, // vant官方使用的是37.5, 对根元素大小进行设置。类似px2rem中的remUnit参数
+            unitPrecision: 8,
+            // rootValuePC: 192,
+            minPixelValue: 2, // 所有小于2px的样式都不被转换
             selectorBlackList: ['vant', 'mu'], // 忽略转换正则匹配项
-            propList: ['*']
+            propList: ['*'] // 存储哪些将被转换的属性列表
           })
         ]
       }
