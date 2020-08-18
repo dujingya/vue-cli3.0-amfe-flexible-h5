@@ -7,7 +7,7 @@
  */
 'use strict'
 const path = require('path')
-
+const webpack = require('webpack')
 function resolve(dir) {
   return path.join(__dirname, dir)
 }
@@ -42,7 +42,9 @@ module.exports = {
   },
   devServer: {
     port: port,
-    open: true,
+    open: true, // 自动打开页面
+    compress: true, // 压缩
+    hot: true, // 热加载
     overlay: {
       warnings: false,
       errors: true
@@ -64,6 +66,10 @@ module.exports = {
       alias: {
         '@': resolve('src')
       }
-    }
+    },
+    plugins: [
+      new webpack.NamedModulesPlugin(),  // 可配置也可不配置
+      new webpack.HotModuleReplacementPlugin() // 这个是必须配置的插件
+    ]
   }
 }
