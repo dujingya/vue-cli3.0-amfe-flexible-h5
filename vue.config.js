@@ -30,6 +30,7 @@ module.exports = {
     loaderOptions: {
       postcss: {
         plugins: [
+          require('autoprefixer'),
           require('postcss-pxtorem')({ // 把px单位换算成rem单位
             rootValue: 37.5, // vant官方使用的是37.5, 对根元素大小进行设置。类似px2rem中的remUnit参数
             unitPrecision: 8,
